@@ -2,6 +2,14 @@
 
 This is a full-stack user management application built with React, Redux, TypeScript, and Tailwind CSS for the frontend, and Go with PostgreSQL for the backend.
 
+
+
+![image](https://github.com/user-attachments/assets/02812736-08d1-4fa4-8570-5d2e03a8dfb1)
+
+
+![image](https://github.com/user-attachments/assets/e69f5332-c40b-43b5-9003-10920bf34ef5)
+
+
 ## Frontend (React, Redux, TypeScript, Tailwind CSS)
 
 ### Setup
@@ -210,3 +218,5 @@ Remember to replace `user@example.com`, `'New Name'`, and the ID numbers with ac
 - Implement email verification
 - Add unit and integration tests
 - Set up CI/CD pipeline
+
+
