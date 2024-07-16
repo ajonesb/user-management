@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/ajonesb/user-management-backend/internal/models"
+	"github.com/ajonesb/user-management/backend/internal/models"
 	"gorm.io/gorm"
 )
 

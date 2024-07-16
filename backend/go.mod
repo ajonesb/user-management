@@ -1,4 +1,4 @@
-module github.com/ajonesb/user-management-backend
+module github.com/ajonesb/user-management/backend
 
 go 1.21.1
 

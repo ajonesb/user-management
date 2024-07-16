@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ajonesb/user-management-backend/pkg/config"
+	"github.com/ajonesb/user-management/backend/pkg/config"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
 )

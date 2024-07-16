@@ -4,8 +4,8 @@ package database
 import (
 	"fmt"
 
-	"github.com/ajonesb/user-management-backend/internal/models"
-	"github.com/ajonesb/user-management-backend/pkg/config"
+	"github.com/ajonesb/user-management/backend/internal/models"
+	"github.com/ajonesb/user-management/backend/pkg/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

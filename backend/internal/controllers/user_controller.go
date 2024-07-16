@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ajonesb/user-management-backend/internal/models"
-	"github.com/ajonesb/user-management-backend/internal/services"
+	"github.com/ajonesb/user-management/backend/internal/models"
+	"github.com/ajonesb/user-management/backend/internal/services"
 	"github.com/gin-gonic/gin"
 )
 

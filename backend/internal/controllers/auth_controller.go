@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/ajonesb/user-management-backend/internal/services"
+	"github.com/ajonesb/user-management/backend/internal/services"
 	"github.com/gin-gonic/gin"
 )
 

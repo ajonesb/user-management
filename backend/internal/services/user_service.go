@@ -2,8 +2,8 @@
 package services
 
 import (
-	"github.com/ajonesb/user-management-backend/internal/models"
-	"github.com/ajonesb/user-management-backend/internal/repositories"
+	"github.com/ajonesb/user-management/backend/internal/models"
+	"github.com/ajonesb/user-management/backend/internal/repositories"
 )
 
 type UserService struct {

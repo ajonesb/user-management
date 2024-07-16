@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ajonesb/user-management-backend/internal/models"
-	"github.com/ajonesb/user-management-backend/internal/repositories"
+	"github.com/ajonesb/user-management/backend/internal/models"
+	"github.com/ajonesb/user-management/backend/internal/repositories"
 	"github.com/golang-jwt/jwt/v4"
 	"golang.org/x/crypto/bcrypt"
 )
