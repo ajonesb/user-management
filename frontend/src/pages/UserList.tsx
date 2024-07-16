@@ -33,7 +33,7 @@ const UserList: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4 text-sky-400">User List</h1>
+      <h1 className="text-3xl font-bold mb-4 text-white">User List</h1>
       {users.map((user) => (
         <UserCard
           key={user.id}
