@@ -1,4 +1,4 @@
-# User Management Application
+# React / Golang - User Management Application
 
 This is a full-stack user management application built with React, Redux, TypeScript, and Tailwind CSS for the frontend, and Go with PostgreSQL for the backend.
 
