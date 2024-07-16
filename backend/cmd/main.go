@@ -27,13 +27,18 @@ func main() {
 	r := gin.Default()
 
 	// CORS middleware configuration
-	corsConfig := cors.DefaultConfig()
-	corsConfig.AllowOrigins = []string{"http://localhost:3001"} // Add your frontend URL here
-	corsConfig.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}
-	corsConfig.AllowHeaders = []string{"Origin", "Content-Type", "Accept", "Authorization"}
-	corsConfig.AllowCredentials = true
+	// corsConfig := cors.DefaultConfig()
+	// corsConfig.AllowOrigins = []string{"http://localhost:3000"} // Add your frontend URL here
+	// corsConfig.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}
+	// corsConfig.AllowHeaders = []string{"Origin", "Content-Type", "Accept", "Authorization"}
+	// corsConfig.AllowCredentials = true
+	config := cors.DefaultConfig()
+	config.AllowOrigins = []string{"http://localhost:3000"}
+	config.AllowCredentials = true
+	config.AddAllowHeaders("Authorization")
+	r.Use(cors.New(config))
 
-	r.Use(cors.New(corsConfig))
+	//r.Use(cors.New(corsConfig))
 
 	userRepository := repositories.NewUserRepository(db)
 	userService := services.NewUserService(userRepository)
@@ -55,7 +60,7 @@ func main() {
 		authorized.DELETE("/users/:id", userController.DeleteUser)
 	}
 
-	port := ":8081"
+	port := ":8080"
 
 	r.Run(port)
 }

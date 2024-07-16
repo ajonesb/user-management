@@ -21,7 +21,7 @@ This is a full-stack user management application built with React, Redux, TypeSc
    npm start
    ```
 
-The application will be available at `http://localhost:3001`.
+The application will be available at `http://localhost:3000`.
 
 ### Features
 
@@ -68,7 +68,7 @@ The application will be available at `http://localhost:3001`.
    go run cmd/main.go
    ```
 
-The server will start on `http://localhost:8081`.
+The server will start on `http://localhost:8080`.
 
 ### Features
 

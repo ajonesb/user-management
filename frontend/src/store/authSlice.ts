@@ -37,20 +37,15 @@ export const register = createAsyncThunk(
 );
 
 export const login = createAsyncThunk(
-  "auth/login",
-  async (
-    credentials: { email: string; password: string },
-    { rejectWithValue }
-  ) => {
+  'auth/login',
+  async (credentials: { email: string; password: string }, { rejectWithValue }) => {
     try {
       const response = await authService.login(credentials);
-      localStorage.setItem("token", response.data.token);
+      // Store the token in localStorage
+      localStorage.setItem('token', response.data.token);
       return response.data;
     } catch (err) {
-      if (err instanceof Error) {
-        return rejectWithValue(err.message);
-      }
-      return rejectWithValue("An unknown error occurred");
+      return rejectWithValue((err as any).response.data);
     }
   }
 );

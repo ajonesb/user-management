@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 import { User } from "../types/user";
 
-const API_URL = "http://localhost:8081/api";
+const API_URL = "http://localhost:8080/api";
 
 // Create a custom axios instance
 const axiosInstance: AxiosInstance = axios.create({
