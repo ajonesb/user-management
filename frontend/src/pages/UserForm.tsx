@@ -68,7 +68,7 @@ const UserForm: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">{id ? 'Edit User' : 'Create User'}</h1>
+      <h1 className="text-3xl font-bold text-sky-400 mb-4">{id ? 'Edit User' : 'Create User'}</h1>
         {error && <div className="text-red-500 mb-4">{error}</div>}
       <Formik
         initialValues={initialValues}
@@ -79,7 +79,7 @@ const UserForm: React.FC = () => {
         {({ isSubmitting }) => (
           <Form className="max-w-md">
             <div className="mb-4">
-              <label htmlFor="name" className="block mb-2">Name</label>
+              <label htmlFor="name" className="block mb-2 text-sky-400">Name</label>
               <Field
                 type="text"
                 id="name"
@@ -89,7 +89,7 @@ const UserForm: React.FC = () => {
               <ErrorMessage name="name" component="div" className="text-red-500 mt-1" />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block mb-2">Email</label>
+              <label htmlFor="email" className="block mb-2 text-sky-400">Email</label>
               <Field
                 type="email"
                 id="email"

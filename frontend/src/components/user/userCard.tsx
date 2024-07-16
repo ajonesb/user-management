@@ -10,9 +10,9 @@ interface UserCardProps {
 
 const UserCard: React.FC<UserCardProps> = ({ user, onEdit, onDelete }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 mb-4">
-      <h2 className="text-xl font-semibold mb-2">{user.name}</h2>
-      <p className="text-gray-600 mb-4">{user.email}</p>
+    <div className="bg-sky-800 shadow-md rounded-lg p-6 mb-4">
+      <h2 className="text-xl font-semibold mb-2 text-sky-400">{user.name}</h2>
+      <p className="text-gray-600 mb-4 text-sky-200">{user.email}</p>
       <div className="flex justify-end">
         <Button onClick={() => onEdit(user.id)} className="mr-2">
           Edit
